@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Rubik+Dirt&display=swap" rel="stylesheet">
-    <title>Contacto</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <title>Contacto</title>
 </head>
 <body>
     <!-- Encabezado -->
@@ -18,44 +18,27 @@
 <main>
     <section>
             <!-- Formulario -->
-            <form class="Formulario" target="_blank"
-                  action="/submit" method="post"> 
+                <form class="Form_nav" target="_blank" action="/submit" method="post">
 
-              <label class="label" for="Nombre">Nombre:</label>
-              <input type="text" name="nombre" id="nombre">   
-        
-              <label class="label" for="email">Email:</label>
-              <input type="text" name="email" id="email">
+                    <label for="nombre">Nombre:</label>
+                     <input type="text" name="nombre" id="nombre" required>   
 
-              <label class="label" for="Genero">Genero:</label>
+                      <label for="email">Email:</label>
+                      <input type="email" name="email" id="email" required>
 
-              <input type="radio" name="" id="">
-              <label class="label" for="Hombre">Hombre</label>
+                      <label for="comentario">Comentario:</label>
+                      <textarea name="comentario" id="comentario"></textarea>
 
-              <input type="radio" name="" id="">
-              <label class="label" for="Mujer">Mujer:</label>
+                      <label for="pais">País:</label>
+                      <select id="pais" name="pais">
+                     <option value="Argentina">Argentina</option>
+                     <option value="Brasil">Brasil</option>
+                     <option value="Uruguay">Uruguay</option>
+                     </select>
 
-              <input type="radio" name="" id="">
-              <label class="label" for="No indicar">No indicar</label>
+                    <input type="submit" value="Enviar">
+                </form>
 
-              <!--  Comentario -->
-              <label class="label" for="Comentario">Comentario:</label>
-              <textarea name="Comentario" id="Comentario"></textarea>
-        
-
-        
-                    <label class="label" for="Pais">Pais:</label>
-                       <Select>
-                         <option value="">Argentina</option>
-                         <option value="">Brasil</option>
-                         <option value="">Uruguay</option>
-
-                        </Select>
-
-                <input type="submit" value="Emviar">
-                
-
-             </form>
     </section>
 </main>
      
