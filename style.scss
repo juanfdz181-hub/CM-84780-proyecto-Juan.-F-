@@ -79,6 +79,7 @@ body {
 /* -- Header - INDEX-- */
 h1 {
     font-family: $fuente-tittle;
+    font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 .navbar {
